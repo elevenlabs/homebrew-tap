@@ -1,25 +1,25 @@
 class Elevenlabs < Formula
   desc "CLI for the ElevenLabs API Documentation"
   homepage "https://github.com/elevenlabs/cli"
-  version "1.0.0-alpha.2"
+  version "1.0.0-alpha.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/elevenlabs/cli/releases/download/v1.0.0-alpha.2/elevenlabs-cli-aarch64-apple-darwin.tar.gz"
-      sha256 "e98e45b81b52026eaf4bd3f6bfb59149b4deaaf896292616f9bf1c48ae50bfec"
+      url "https://github.com/elevenlabs/cli/releases/download/v1.0.0-alpha.3/elevenlabs-cli-aarch64-apple-darwin.tar.gz"
+      sha256 "91db62d85f1140a32e21636e56b0133ee06d94eebecf610ce0315346c96dab89"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elevenlabs/cli/releases/download/v1.0.0-alpha.2/elevenlabs-cli-x86_64-apple-darwin.tar.gz"
-      sha256 "96a40f3ef50d4fe43a11cb2944bb5f1e5dd9e5dbf98cc1e7721f750e3469a52f"
+      url "https://github.com/elevenlabs/cli/releases/download/v1.0.0-alpha.3/elevenlabs-cli-x86_64-apple-darwin.tar.gz"
+      sha256 "665d7f66b0a4ce4a4ea765e26dc868635595d6b2019d159094ee2ba727f0dcf3"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/elevenlabs/cli/releases/download/v1.0.0-alpha.2/elevenlabs-cli-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "325d39ff120808f91e3bb4d851876e75b7fa86cbc04dbabba5fbb48cdb6af13a"
+      url "https://github.com/elevenlabs/cli/releases/download/v1.0.0-alpha.3/elevenlabs-cli-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "67be996d03d7339107e08222dceba77529861578fc82da4b7269c9698b914909"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elevenlabs/cli/releases/download/v1.0.0-alpha.2/elevenlabs-cli-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "7a8c442874be0f67bafeeae45a17d3631862f9197ce1357928b53acdac1b3237"
+      url "https://github.com/elevenlabs/cli/releases/download/v1.0.0-alpha.3/elevenlabs-cli-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "d8758eedf2829d106592a9e4e942c7ed3e4900917cb573e950a17477ed98dc42"
     end
   end
   license "Apache-2.0"
