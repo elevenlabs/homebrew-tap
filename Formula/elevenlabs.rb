@@ -1,28 +1,28 @@
 class Elevenlabs < Formula
-  desc "CLI for the ElevenLabs API Documentation"
+  desc "CLI for the ElevenLabs API"
   homepage "https://github.com/elevenlabs/cli"
-  version "1.0.0-alpha.3"
+  version "1.0.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/elevenlabs/cli/releases/download/v1.0.0-alpha.3/elevenlabs-cli-aarch64-apple-darwin.tar.gz"
-      sha256 "91db62d85f1140a32e21636e56b0133ee06d94eebecf610ce0315346c96dab89"
+      url "https://github.com/elevenlabs/cli/releases/download/v1.0.0/elevenlabs-cli-aarch64-apple-darwin.tar.gz"
+      sha256 "6ddaba567da1fb1b83d137755daf3921a73108e9d1f835fd2d38b10190e08b13"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elevenlabs/cli/releases/download/v1.0.0-alpha.3/elevenlabs-cli-x86_64-apple-darwin.tar.gz"
-      sha256 "665d7f66b0a4ce4a4ea765e26dc868635595d6b2019d159094ee2ba727f0dcf3"
+      url "https://github.com/elevenlabs/cli/releases/download/v1.0.0/elevenlabs-cli-x86_64-apple-darwin.tar.gz"
+      sha256 "5ef88d865c12b83d275cde44f7004c97ba5bc52aea05843cbf35250a00ff68b0"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/elevenlabs/cli/releases/download/v1.0.0-alpha.3/elevenlabs-cli-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "67be996d03d7339107e08222dceba77529861578fc82da4b7269c9698b914909"
+      url "https://github.com/elevenlabs/cli/releases/download/v1.0.0/elevenlabs-cli-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "cae386eea20ba435562fdbf8f47591f89bf10006cdc3c17e71955c726a7f9c5a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elevenlabs/cli/releases/download/v1.0.0-alpha.3/elevenlabs-cli-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "d8758eedf2829d106592a9e4e942c7ed3e4900917cb573e950a17477ed98dc42"
+      url "https://github.com/elevenlabs/cli/releases/download/v1.0.0/elevenlabs-cli-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "dedcbb0aa095f7a66181a42f533d7cd2f5e7ac1b5fee9f763ce9731ea91e57cf"
     end
   end
-  license "Apache-2.0"
+  license "MIT"
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin": {},
