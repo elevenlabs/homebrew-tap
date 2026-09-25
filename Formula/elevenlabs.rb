@@ -1,25 +1,25 @@
 class Elevenlabs < Formula
   desc "CLI for the ElevenLabs API"
   homepage "https://github.com/elevenlabs/cli"
-  version "1.3.2"
+  version "1.4.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/elevenlabs/cli/releases/download/v1.3.2/elevenlabs-cli-aarch64-apple-darwin.tar.gz"
-      sha256 "d358fdcc131eae6431bbb0ae048cee0ebfb7641a3642a3f47ddc4e8de36496a2"
+      url "https://github.com/elevenlabs/cli/releases/download/v1.4.0/elevenlabs-cli-aarch64-apple-darwin.tar.gz"
+      sha256 "3e2cfceeab61b09dbebb87d294a30b828c788807acda054601adf4ce72ba8036"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elevenlabs/cli/releases/download/v1.3.2/elevenlabs-cli-x86_64-apple-darwin.tar.gz"
-      sha256 "9696eb1c31eda3c9a2e02b4d498431fdef7625ed42b519c0c832fac980efe733"
+      url "https://github.com/elevenlabs/cli/releases/download/v1.4.0/elevenlabs-cli-x86_64-apple-darwin.tar.gz"
+      sha256 "a5dfce06cb174c251cee4f3c9b20187e15c17a74d0cf1c494de38a6b2f6b856d"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/elevenlabs/cli/releases/download/v1.3.2/elevenlabs-cli-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "760ee4c924aa7c24e02f0d9d77ce7024f0407c863da0c64e94db0aeb415972dd"
+      url "https://github.com/elevenlabs/cli/releases/download/v1.4.0/elevenlabs-cli-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "cec3e017d69a98944e5d808f25535c3b61df0facb1e62c051a963fbcf3bee9c3"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elevenlabs/cli/releases/download/v1.3.2/elevenlabs-cli-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "1cc7e2531eea6955fb8c82cef63df8e6178a17e7d5dc3cb092368a425380671c"
+      url "https://github.com/elevenlabs/cli/releases/download/v1.4.0/elevenlabs-cli-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "d239130dbea1a4c0ed15b4e9d4cbb854c45067a1b0a7f4362b9362d5731c1653"
     end
   end
   license "MIT"
